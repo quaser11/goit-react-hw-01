@@ -1,0 +1,66 @@
+@import url('../../index.css');
+
+.profile {
+    width: 300px;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:30px;
+}
+
+.avatar{
+    width:75px;
+    height:75px;
+    margin: 0 auto;
+    margin-top:75px;
+    margin-bottom:30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+.name{
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.tag{
+    margin: 0 auto;
+    color:#afabaa;
+}
+
+.location{
+    margin: 0 auto;
+    color:#afabaa;
+}
+
+.stats {
+    display: flex;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:calc(100% / 3);
+    height:75px;
+    background-color:#f3f1ef;
+    border-top:1px solid #dfdedd;
+}
+
+li:not(:last-child) {
+    border-right: 1px solid #dfdedd;
+}
+
+.label{
+    color:#afabaa;
+}
+
+.quantity{
+    font-weight: bold;
+}
