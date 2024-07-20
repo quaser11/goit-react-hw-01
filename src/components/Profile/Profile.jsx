@@ -7,6 +7,7 @@ export const Profile = (props) => {
             followers, likes, views
         }
     } = props
+
     return <div className={css.profile}>
         <div className={css.description}>
             <div className={css.avatar}>

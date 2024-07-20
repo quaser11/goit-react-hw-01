@@ -1,5 +1,5 @@
 import {FriendsListUl} from "./FriendsList.styled";
-import {FriendsListItem} from "./FriendsListItem/FriendsListItem";
+import {FriendsListItem} from "../FriendsListItem/FriendsListItem";
 
 export const FriendsList = ({friends}) => {
     return <FriendsListUl>

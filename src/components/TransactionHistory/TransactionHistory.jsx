@@ -1,7 +1,7 @@
-import {TransactionsHistory} from "./Transactions.styled";
-import {TableContainer} from "./Transactions.styled";
+import {TransactionsHistory} from "./TransactionHistory.styled.js";
+import {TableContainer} from "./TransactionHistory.styled.js";
 
-export const Transactions = ({transactions}) => {
+export const TransactionHistory = ({transactions}) => {
     return <TableContainer>
         <TransactionsHistory>
             <thead>
@@ -14,7 +14,7 @@ export const Transactions = ({transactions}) => {
 
             <tbody>
             {transactions.map((transaction) => {
-                return <tr>
+                return <tr key={transaction.id}>
                     <td>{transaction.type}</td>
                     <td>{transaction.amount}</td>
                     <td>{transaction.currency}</td>
